@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production Efficiency Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Production Efficiency Calculator</h1>
+        <div class="input-container">
+            <label for="goodProduction">Good Production (Quantity in Cases):</label>
+            <input type="number" id="goodProduction" placeholder="Enter quantity">
+        </div>
+        <div class="input-container">
+            <label for="nominalSpeed">Nominal Speed (Cases per hour):</label>
+            <input type="number" id="nominalSpeed" placeholder="Enter quantity per hour">
+        </div>
+        <div class="input-container">
+            <label for="occupiedTime">Occupied Time (hours):</label>
+            <input type="number" id="occupiedTime" placeholder="Enter hours">
+        </div>
+        <div class="input-container">
+            <label for="averageSpeed">Average Runing Speed of the Line (Cases per hour):</label>
+            <input type="number" id="averageSpeed" placeholder="Enter quantity per hour">
+        </div>
+        <button onclick="calculate()">Calculate</button>
+        <div id="results" class="hidden">
+            <p>Asset Intensity: <span id="assetIntensity"></span>%</p>
+            <p>Speed Loss: <span id="speedLoss"></span>%</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
